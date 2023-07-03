@@ -1,0 +1,6 @@
+#dotfiles
+.gitignore
+
+#artifacts and source
+dist/
+node_modules
