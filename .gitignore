@@ -3,7 +3,7 @@ coverage/
 npm-debug.log
 .package.json
 package-lock.json
-output.md
+tailwind.config.js
+.npmignore
 output/
 dist/
-.DS_Store

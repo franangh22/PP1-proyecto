@@ -1,6 +1,10 @@
 #dotfiles
 .gitignore
+package.json
+package-lock.json
+tailwind.config.js
 
 #artifacts and source
 dist/
 node_modules
+
