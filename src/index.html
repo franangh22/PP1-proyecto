@@ -22,12 +22,21 @@
       <div class="flex justify-between items-center">
         <ion-icon class='bx bx-home-alt-2 h-10 inline font-bold mx-2 cursor-pointer' name="home-outline"></ion-icon>
         <span class="text-xl font-Poppins font-bold cursor-pointer">Logo</span>
-        <script src="https://cdn.tailwindcss.com"></script>
         <span class="text-3x1 cursor-pointer mx-2 md:hidden block">
           <ion-icon class="font-bold" name="menu" onclick="Menu(this)"></ion-icon>
         </span>
         <script src="scripts/collapsenav.js"></script>
       </div>
+
+      <!-- tailwindcss -->
+      <script src="https://cdn.tailwindcss.com"></script>
+      <style type="text/tailwindcss">
+        @layer components{
+          .card{
+        @apply rounded-xl shadow-lg m-3;
+          }
+        }
+      </style>
 
       <ul
         class="md:flex md:items-center font-bold text-center justify-center z-1 md:z-auto md:static absolute bg-orange-50  w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
@@ -44,22 +53,32 @@
   <main>
 
 
-    
-<section class="bg-center bg-no-repeat bg-[url('https://img.freepik.com/free-photo/white-building-with-glass-doors_1203-1241.jpg?w=2000')] shadow-xl rounded-lg bg-orange-50 bg-blend-multiply">
-  <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
-      <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-fuchsia-400 md:text-5xl lg:text-6xl">Primer proyecto</h1>
-      <p class="mb-8 text-lg font-normal text-gray-700 lg:text-xl sm:px-16 lg:px-48">Breve descripcion del proyecto</p>
-      <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
-          <a href="#" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-black rounded-lg bg-green-400 hover:bg-green-600 focus:ring-4 focus:ring-green-300 dark:focus:ring-green-300">
-              Empieza ya mismo
-              <svg aria-hidden="true" class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+
+    <section
+      class="bg-center bg-no-repeat bg-[url('https://img.freepik.com/free-photo/white-building-with-glass-doors_1203-1241.jpg?w=2000')] shadow-xl rounded-lg bg-orange-50 bg-blend-multiply">
+      <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
+        <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-fuchsia-400 md:text-5xl lg:text-6xl">
+          Primer proyecto</h1>
+        <p class="mb-8 text-lg font-normal text-gray-700 lg:text-xl sm:px-16 lg:px-48">Breve descripcion del proyecto
+        </p>
+        <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
+          <a href="#"
+            class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-black rounded-lg bg-green-400 hover:bg-green-600 focus:ring-4 focus:ring-green-300 dark:focus:ring-green-300">
+            Empieza ya mismo
+            <svg aria-hidden="true" class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clip-rule="evenodd"></path>
+            </svg>
           </a>
-          <a href="#" class="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 text-base font-medium text-center text-gray-400 rounded-lg border border-rose-300 hover:bg-rose-100 focus:ring-2 focus:ring-red-50">
-              Acerca de nosotros
-          </a>  
+          <a href="#"
+            class="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 text-base font-medium text-center text-gray-400 rounded-lg border border-rose-300 hover:bg-rose-100 focus:ring-2 focus:ring-red-50">
+            Acerca de nosotros
+          </a>
+        </div>
       </div>
-  </div>
-</section>
+    </section>
 
 
 
@@ -135,89 +154,63 @@
     <h2 class="text-2xl md:text-3xl font-bold text-blue-600 text-center mt-3">Sobre nosotros</h2>
 
     <div id="controls-carousel" class="relative w-full" data-carousel="static">
-      <!-- Carousel wrapper -->
+      <script src="./scripts/carousel.js"></script>
+      <!-- Galeria -->
       <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-           <!-- Item 1 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-              <img src="./images/about.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-          </div>
-          <!-- Item 2 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-              <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/tester-or-developer-what-suits-you-the-most.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-          </div>
-          <!-- Item 3 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-              <img src="https://www.cyberark.com/wp-content/uploads/2019/11/Developer.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-          </div>
-          <!-- Item 4 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>  
-              <img src="https://assets.xboxservices.com/assets/48/94/48944ec6-2137-4981-b7f8-4ba055c52f8e.jpg?n=Minecraft_Sneaky-Slider-1084_Trails-and-Tails_1600x675.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-          </div>
-          <!-- Item 5 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-              <img src="https://www.techupth.com/images/home/programming-amico.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-          </div>
+        <!-- Item 1 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="./images/about.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            alt="...">
+        </div>
+        <!-- Item 2 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+          <img
+            src="https://www.simplilearn.com/ice9/free_resources_article_thumb/tester-or-developer-what-suits-you-the-most.jpg"
+            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 3 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="https://www.cyberark.com/wp-content/uploads/2019/11/Developer.jpg"
+            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 4 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img
+            src="https://assets.xboxservices.com/assets/48/94/48944ec6-2137-4981-b7f8-4ba055c52f8e.jpg?n=Minecraft_Sneaky-Slider-1084_Trails-and-Tails_1600x675.jpg"
+            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 5 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="https://www.techupth.com/images/home/programming-amico.svg"
+            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
       </div>
       <!-- Slider controls -->
-      <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-          <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-              <svg aria-hidden="true" class="w-6 h-6 text-white dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-              <span class="sr-only">Previous</span>
-          </span>
+      <button type="button"
+        class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        data-carousel-prev>
+        <span
+          class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg aria-hidden="true" class="w-6 h-6 text-white dark:text-gray-800" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+          </svg>
+          <span class="sr-only">Previous</span>
+        </span>
       </button>
-      <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-          <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-              <svg aria-hidden="true" class="w-6 h-6 text-white dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-              <span class="sr-only">Next</span>
-          </span>
+      <button type="button"
+        class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        data-carousel-next>
+        <span
+          class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg aria-hidden="true" class="w-6 h-6 text-white dark:text-gray-800" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+          <span class="sr-only">Next</span>
+        </span>
       </button>
-  </div>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-  // Obtener elementos del carrusel
-  const carousel = document.querySelector("[data-carousel='static']");
-  const items = carousel.querySelectorAll("[data-carousel-item]");
-  const prevButton = carousel.querySelector("[data-carousel-prev]");
-  const nextButton = carousel.querySelector("[data-carousel-next]");
-
-  // Inicializar variables
-  let currentIndex = 0;
-
-  // Función para mostrar el ítem actual
-  function showCurrentItem() {
-    items.forEach(function(item, index) {
-      if (index === currentIndex) {
-        item.classList.add("block");
-        item.classList.remove("hidden");
-      } else {
-        item.classList.add("hidden");
-        item.classList.remove("block");
-      }
-    });
-  }
-
-  // Función para mostrar el ítem siguiente
-  function showNextItem() {
-    currentIndex = (currentIndex + 1) % items.length;
-    showCurrentItem();
-  }
-
-  // Función para mostrar el ítem anterior
-  function showPreviousItem() {
-    currentIndex = (currentIndex - 1 + items.length) % items.length;
-    showCurrentItem();
-  }
-
-  // Agregar eventos a los botones de navegación
-  prevButton.addEventListener("click", showPreviousItem);
-  nextButton.addEventListener("click", showNextItem);
-  
-  // Mostrar el primer ítem
-  showCurrentItem();
-});
-
-  </script>
+    </div>
 
   </main>
 
