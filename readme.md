@@ -4,7 +4,3 @@
 
 
 ## 📦 install npm
-
-```sh
-npm i node-telegram-bot-api
-```
